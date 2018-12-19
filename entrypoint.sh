@@ -26,6 +26,8 @@ check_config "database" "$DB_NAME"
 check_config "db-filter" "$DB_NAME"
 check_config "db_password" "$DB_PASSWORD"
 
+echo "${DB_ARGS[@]}"
+
 case "$1" in
     -- | odoo)
         shift
